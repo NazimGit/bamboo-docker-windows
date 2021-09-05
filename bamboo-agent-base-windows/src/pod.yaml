@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bambooagent
+  labels:
+    name: bambooagent
+spec:
+  nodeSelector:
+    "kubernetes.io/os": windows
+  containers:
+  - name: bambooagent
+    image: dockerhubreg/bambooagent
+    ports:
+      - containerPort: 54663
+    args:
+      - "http://localhost:8085"
