@@ -1,4 +1,5 @@
-FROM mcr.microsoft.com/windows/servercore:20H2-amd64
+# FROM mcr.microsoft.com/windows/servercore:20H2-amd64
+FROM mcr.microsoft.com/windows/servercore:1809-amd64
 # FROM mcr.microsoft.com/windows/servercore:1607-amd64
 
 ENV BAMBOO_VERSION=8.0.1
