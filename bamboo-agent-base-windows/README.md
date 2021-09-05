@@ -41,3 +41,5 @@ This Docker image contains only minimal setup to run a Bamboo agent which might 
 # Upgrade
 
 Remote agents are updated automatically, so you don’t need to worry about it during Bamboo server upgrade. Agents automatically detect when a new version is available and downloads new classes from the server.
+
+docker run --name="bambooAgent" --init -d "488672ce8818" http://172.31.96.1:8085
